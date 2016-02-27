@@ -1,7 +1,7 @@
 require "./rc4/*"
 
 class RC4
-  def initialize @key : Slice(UInt8)
+  def initialize(@key : Slice(UInt8))
     # initialize internal state
     i = j = 0
     @state = (0..255).to_a
